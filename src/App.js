@@ -3,12 +3,12 @@ import Mycustomform from './container/mycustomform';
 import './App.css';
 
 class App extends Component {
-  const handleSubmit=(v)=>{
-    console.log(v);
+  handleSubmit=(e)=>{
+    console.log(e);
   }
   render() {
     return (
-     <Mycustomform handleSubmit={this.handleSubmit}/>
+     <Mycustomform onSubmit={this.handleSubmit}/>
     );
   }
 }
